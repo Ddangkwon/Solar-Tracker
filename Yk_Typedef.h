@@ -8,6 +8,8 @@
 #ifndef YK_TYPEDEF_H_
 #define YK_TYPEDEF_H_
 
+/*define*/
+#define YK_DUMMY_LENGTH  4;
 /*Signed*/
 typedef signed char           int8_t;
 typedef short              	  int16_t;
@@ -21,4 +23,9 @@ typedef unsigned short 		  uint16_t;
 typedef unsigned int          uint32_t;
 typedef unsigned long long    uint64_t;
 
+/*struct*/
+typedef struct{
+	uint16_t m_su16header;
+	uint8_t  m_asu8Dummy[4];
+}CalData_t;
 #endif /* YK_TYPEDEF_H_ */
